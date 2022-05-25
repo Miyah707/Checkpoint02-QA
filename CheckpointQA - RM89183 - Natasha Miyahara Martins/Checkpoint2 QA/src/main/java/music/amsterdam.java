@@ -22,10 +22,9 @@ public class amsterdam {
 		
 		WebDriver driver = new ChromeDriver();
 
-        // Opening Google
+        // Abrindo o Google
         driver.get("http://www.google.com.br");
 
-        // q its the search box name/ID
         WebElement element = driver.findElement(By.name("q"));
 
         element.sendKeys("Amsterdam Nothing But Thieves");
