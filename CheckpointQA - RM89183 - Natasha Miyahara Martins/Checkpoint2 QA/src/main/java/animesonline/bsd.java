@@ -30,8 +30,6 @@ public class bsd {
 
         element.sendKeys("Bungou Stray Dogs Crunchyroll");
         
-        // nao consegui deixar para ir no site do legendado mas o anime é bom :)
-        
         // Submit the form
         element.submit();
 
