@@ -22,18 +22,14 @@ public class phasmophobia {
 		
 		WebDriver driver = new ChromeDriver();
 
-        // Opening Google
         driver.get("http://www.google.com.br");
 
-        // q its the search box name/ID
         WebElement element = driver.findElement(By.name("q"));
 
         element.sendKeys("Phasmophobia Steam");
         
-        // Submit the form
         element.submit();
 
-        // Printing the page title - just for example
         System.out.println("Page title is: " + driver.getTitle());
         
 
@@ -51,7 +47,6 @@ public class phasmophobia {
       
 //        WebDriverWait(driver, 20).until(EC.element_to_be_clickable((
 //        
-		// If you want to Close the browser, uncomment this line
 		// driver.quit();
     }
 }
