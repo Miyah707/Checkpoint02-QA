@@ -22,17 +22,14 @@ public class amsterdam {
 		
 		WebDriver driver = new ChromeDriver();
 
-        // Abrindo o Google
         driver.get("http://www.google.com.br");
 
         WebElement element = driver.findElement(By.name("q"));
 
         element.sendKeys("Amsterdam Nothing But Thieves");
         
-        // Submit the form
         element.submit();
 
-        // Printing the page title - just for example
         System.out.println("Page title is: " + driver.getTitle());
         
 
